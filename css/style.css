@@ -1,0 +1,28 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.header_head .navbar .navbar-brand{
+  /* text-align: left; */
+  width: 25%;
+}
+
+.header_head .navbar .navbar-brand .logoImg{
+  width: 100%
+}
+
+.header_head .navbar .navbar-nav{
+  padding: 0;
+  text-align: center;
+}
+
+.sec_layer .form_search {
+  margin: 10% auto;
+}
+
+.esriViewPopup .gallery { margin: 0 auto !important; }
+
+a[data-fancybox] img {
+  cursor: zoom-in;
+}

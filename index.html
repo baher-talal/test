@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egy Map</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header_head">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <!-- <img class="logoImg" src="img/logo.jpeg" alt=""> -->
+          <img class="logoImg" src="img/logo2.jpg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">خدمات المواطنين</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">خريطة المشروعات</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">خدمات المواطنين</a>
+
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">الرئيسية</a>
+
+                <a class="dropdown-item" href="#">الرئيسية</a>
+
+                <a class="dropdown-item" href="#">الرئيسية</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="sec_layer">
+    <div class="container">
+      <div class="row">
+
+
+        <!-- <div class="col-sm-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.1969722036436!2d31.41734389095817!3d30.140151145833567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581739edeb5ec9%3A0xb7fdb412f699b796!2z2LTYsdmD2Kkg2KfZhNmG2YrZhCDYp9mE2LnYp9mF2Kkg2YTYpdmG2LTYp9ihINin2YTYt9ix2YI!5e0!3m2!1sar!2seg!4v1662542442163!5m2!1sar!2seg" height="450" class="w-100 border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> -->
+
+        <div class="col-sm-12">
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 80%;
+              height: 0;
+              max-width: 100%;
+            }
+
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+
+            small {
+              position: absolute;
+              z-index: 40;
+              bottom: 0;
+              margin-bottom: -15px;
+            }
+          </style>
+          <div class="embed-container"><small><a href="//www.arcgis.com/apps/Embed/index.html?webmap=b8c0c7cd84c44cdd84cd8d8bd8d63ba5&extent=31.4161,30.1396,31.4181,30.1406&home=true&zoom=true&scale=true&search=true&searchextent=true&details=true&basemap_gallery=true&disable_scroll=true&theme=dark" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="test" src="//www.arcgis.com/apps/Embed/index.html?webmap=b8c0c7cd84c44cdd84cd8d8bd8d63ba5&extent=31.4161,30.1396,31.4181,30.1406&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
+        </div> 
+
+        <div class="col-sm-12">
+          <form class="form_search w-75">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="اسم المشروع او كلمة البحث">
+            </div>
+
+            <div class="form-group">
+              <select class="form-control">
+                <option>السنة</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control">
+                <option>اختار الكل</option>
+                <option>طرق وكبارى وأنفاق</option>
+                <option>أستثمار</option>
+                <option>إسكان ومدن جديدة</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control">
+                <option>المحافظة</option>
+                <option>القاهرة</option>
+                <option>الجيزة</option>
+                <option>الاسكندارية</option>
+                <option>الشرقية</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control">
+                <option>الحالة</option>
+                <option>اختار الكل</option>
+                <option>نفذت</option>
+                <option>جاري تنفيذها</option>
+              </select>
+            </div>
+
+            <button class="btn btn-danger d-block m-auto w-50" type="submit">بحث</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec_result mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="float-left w-50">
+            <div class="form-group">
+              <select class="form-control">
+                <option>الافتراضي</option>
+                <option>الترتيب بالاكثر زيارة</option>
+                <option>الترتيب بالاكثر تعليقاً</option>
+                <option>الترتيب بالاحدث </option>
+                <option>الترتيب بالاقدم </option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-sm-12">
+          <p>ظهور 50 من 109 نتيجة</p>
+        </div>
+  </section>
+
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
